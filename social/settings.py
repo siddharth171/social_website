@@ -125,3 +125,13 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
+
+# Sending email
+'''
+need to add a Simple Mail Transfer Protocol (SMTP) configuration
+but during development Django provides a feature to write emails to
+standard output
+'''
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
