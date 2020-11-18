@@ -135,3 +135,8 @@ standard output
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
+# Working with images/Uploading images
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
+
